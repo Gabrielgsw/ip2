@@ -5,10 +5,9 @@ public class ItemVenda {
 	private int quantidade;
 	private Produto produtoVendido;
 	
-	public ItemVenda(Produto produtovendido,int quantidade) {
+	public ItemVenda(int quantidade) {
 		//super();
 		this.quantidade = quantidade;
-		this.produtoVendido = produtovendido; 
 	}
 
 	public int getQuantidade() {

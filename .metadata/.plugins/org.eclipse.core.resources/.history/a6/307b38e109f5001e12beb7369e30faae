@@ -1,10 +1,9 @@
 package Entities;
 
-//import java.text.SimpleDateFormat;
+import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
-import java.util.ArrayList;
 import java.util.List;
+import java.util.ArrayList;
 
 public class Venda {
 
@@ -59,8 +58,8 @@ public class Venda {
 	
 	public void listarItensVenda() {
 		
-		//SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
-		System.out.printf("Data da venda: %s\n",DateTimeFormatter.ofPattern("dd/MM/yyyy").format(this.data));
+		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+		System.out.printf("Data da venda: %s\n",sdf.format(this.data));
 		System.out.printf("Cliente: %s | CPF: %s | idade: %s\n",this.comprador.getNome(),this.comprador.getCpf(),this.comprador.calcularIdade());
 		System.out.printf("Atendente: %s\n\n",this.atendente);
 		
@@ -68,10 +67,10 @@ public class Venda {
 		System.out.println("-------------------------------------------------------------");
 		
 		for(ItemVenda i : itensVenda) {
-			System.out.printf("%s           |  %s      |  %s        | R$ %s\n",i.getProdutoVendido().getNome(),i.getProdutoVendido().getPreco(),i.getQuantidade(),i.getQuantidade()*i.getProdutoVendido().getPreco());
+			System.out.printf("%s   |  %s  |  %s   | R$ %s\n",i.getProdutoVendido().getNome(),i.getProdutoVendido().getPreco(),i.getQuantidade(),i.getQuantidade()*i.getProdutoVendido().getPreco());
 		}
 		System.out.println("-------------------------------------------------------------");
-		System.out.printf("Total da venda:                             R$ %s",this.calcularTotal());
+		System.out.printf("Total da venda:            R$ %s",this.calcularTotal());
 	}
 	
 }

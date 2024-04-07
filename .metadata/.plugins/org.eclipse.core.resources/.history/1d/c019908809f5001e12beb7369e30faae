@@ -25,12 +25,12 @@ public class Program {
 	        
 	        // Criando a Venda efetivamente    
 	        
-	        Venda venda = new Venda(LocalDateTime.now(), "Bruno Marques",c1);
-	        venda.setComprador(c1);
+	        Venda venda = new Venda(c1, LocalDateTime.now(), "Bruno Marques");
+	        venda.setClienteComprador(c1);
 	        
-	        venda.adicionarItem(it1);
-	        venda.adicionarItem(it2);
-	        venda.adicionarItem(it3);
+	        venda.adicionaItem(it1);
+	        venda.adicionaItem(it2);
+	        venda.adicionaItem(it3);
 	        
 	        venda.listarItensVenda();
 	}

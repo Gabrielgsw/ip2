@@ -71,7 +71,7 @@ public class Venda {
 			System.out.printf("%s           |  %s      |  %s        | R$ %s\n",i.getProdutoVendido().getNome(),i.getProdutoVendido().getPreco(),i.getQuantidade(),i.getQuantidade()*i.getProdutoVendido().getPreco());
 		}
 		System.out.println("-------------------------------------------------------------");
-		System.out.printf("Total da venda:                             R$ %s",this.calcularTotal());
+		System.out.printf("Total da venda:            R$ %s",this.calcularTotal());
 	}
 	
 }
