@@ -1,0 +1,14 @@
+package Entities;
+
+import java.time.LocalDateTime;
+import java.util.List;
+import java.util.ArrayList;
+
+public class Venda {
+
+	private LocalDateTime data;
+	private String atendente;
+	private Cliente comprador;
+	private List<ItemVenda> itensVenda;
+	
+}

@@ -11,7 +11,7 @@ public class Cliente {
 	private LocalDate dataNascimento;
 	
 	public Cliente(String cpf, String nome, LocalDate dataNascimento) {
-		//super();
+		super();
 		this.cpf = cpf;
 		this.nome = nome;
 		this.dataNascimento = dataNascimento;

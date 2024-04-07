@@ -1,8 +1,6 @@
 package Entities;
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.temporal.ChronoUnit;
 
 public class Cliente {
 
@@ -11,7 +9,7 @@ public class Cliente {
 	private LocalDate dataNascimento;
 	
 	public Cliente(String cpf, String nome, LocalDate dataNascimento) {
-		//super();
+		super();
 		this.cpf = cpf;
 		this.nome = nome;
 		this.dataNascimento = dataNascimento;
@@ -37,8 +35,6 @@ public class Cliente {
 	}
 	
 	
-	public int calcularIdade() {
-		return (int)ChronoUnit.YEARS.between(this.dataNascimento, LocalDateTime.now());
-	}
+	
 	
 }
