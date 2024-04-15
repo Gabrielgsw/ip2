@@ -44,8 +44,28 @@ public class Bilhete {
 	}
 	
 }
+	//Implementando metodo num cont
+	public int qtdNumerosContidos(Bilhete bilheteLoteria) {
+		int qtd = 0;
+		//Verificando a quantidade de numeros iguais
+		for(int i = 0;i<tamanho;i++) {
+			for(int j = 0;j<tamanho;j++) {
+				if(this.bilhete[i] == bilheteLoteria.bilhete[j]) {
+					qtd++;
+				}
+			}
+		}
+		return qtd;
+	}
 	
 	
-	
+	// Implementando o toString
+	public String toString() {
+		String resultado = "[";
+		for(int i = 0; i< tamanho ; i++ ) {
+			resultado += bilhete[i] + ",";
+		}
+		return resultado;
+	}
 	
 }
