@@ -5,5 +5,5 @@
  * @author Gabriel
  *
  */
-module ExercicioClassesObjetos {
+module ExercicioLoteria {
 }
