@@ -8,4 +8,12 @@
     <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="java.time.format.DateTimeFormatter"/>
     <fullyQualifiedTypeName name="java.util.Random"/>
+    <fullyQualifiedTypeName name="java.lang.Math"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="Entities.Circle"/>
+    <fullyQualifiedTypeName name="Entities.Rectangle"/>
+    <fullyQualifiedTypeName name="Entities.Professor"/>
+    <fullyQualifiedTypeName name="Entities.Estudante"/>
+    <fullyQualifiedTypeName name="Entities.Bilhete"/>
 </qualifiedTypeNameHistroy>

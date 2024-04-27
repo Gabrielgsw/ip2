@@ -4,8 +4,9 @@ import java.util.Random;
 
 public class Bilhete {
 
-	int[] bilhete;
-	int tamanho;
+	private int[] bilhete;
+	private int tamanho;
+	public static int qntd = 0;
 	
 	Random rd = new Random();	
 	
@@ -32,16 +33,7 @@ public class Bilhete {
 		
 		//Ordenando os numeros
 		
-		for(int i = 0;i<tamanho;i++) {
-			int chave = bilhete[i];
-			int j = i - 1;
-			while(j>= 0 && bilhete[j] > chave) {
-				bilhete[j+1] = bilhete[j];
-				j = i - 1;
-			}
-			bilhete[j+1] = chave;
 		
-	}
 	
 }
 	//Implementando metodo num cont
@@ -49,7 +41,7 @@ public class Bilhete {
 		int qtd = 0;
 		//Verificando a quantidade de numeros iguais
 		for(int i = 0;i<tamanho;i++) {
-			for(int j = 0;j<tamanho;j++) {
+			for(int j = 0;j<6;j++) {
 				if(this.bilhete[i] == bilheteLoteria.bilhete[j]) {
 					qtd++;
 				}
